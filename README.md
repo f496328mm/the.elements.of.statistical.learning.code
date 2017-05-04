@@ -3,7 +3,7 @@ the.elements.of.statistical.learning-2009
 
 book: http://statweb.stanford.edu/~tibs/ElemStatLearn/
 
-finish:
+finish:<br>
 Exercise
 4.9
 
