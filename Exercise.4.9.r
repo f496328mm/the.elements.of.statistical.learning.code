@@ -1,8 +1,13 @@
 
 	# exercise 4.9
+	# Write a computer program to perform a quadratic discriminant
+	# analysis by fitting a separate Gaussian model per class. Try it out on the
+	# vowel data, and compute the misclassification error for the test data. The
+	# data can be found in the book website www-stat.stanford.edu/ElemStatLearn
+
 	#function
 	
-	# ³Ì«á¹w´ú  final prediction
+	# æœ€å¾Œé æ¸¬  final prediction
 	pred.fun=function(total.model,train){
 		
 		pred.train = 
@@ -18,7 +23,7 @@
 		return(pred.train)
 	}
 
-	# »s³y¼Ò«¬ build OLS model
+	# è£½é€ æ¨¡å‹ build OLS model
 	classification.fun=function(train,test,i=4){
 
 		temp 	= train[,-1,with=F]
@@ -52,18 +57,18 @@ class.pred.fun=function(tem){
 	#misclassification , balance data, 11 classification
 	table( train$y )
 
-	# °µ¦h¼Ò«¬, 1 vs «D1
+	# åšå¤šæ¨¡å‹, 1 vs é1
 	set.seed(100)
 	temp = sapply(c(1:11),
 			function(x)
 			classification.fun(train,test,i=x)
 			)
-	# total model, 11 ­Ó model
+	# total model, 11 å€‹ model
 	total.model = temp
 	#--------------------------------------------
 	# train pred
 	pred.train = pred.fun(total.model,train)
-	# ¾÷²v§ï¦¨¤ÀÃş
+	# æ©Ÿç‡æ”¹æˆåˆ†é¡
 	pred.train.class = apply( pred.train,1,class.pred.fun)
 	# confusion matrix
 	t.train.matrix = table(train$y,pred.train.class)
@@ -73,7 +78,7 @@ class.pred.fun=function(tem){
 	#--------------------------------------------
 	# test pred
 	pred.test = pred.fun(total.model,test)
-	# ¾÷²v§ï¦¨¤ÀÃş
+	# æ©Ÿç‡æ”¹æˆåˆ†é¡
 	pred.test.class = apply( pred.test,1,class.pred.fun)
 	# confusion matrix
 	t.test.matrix = table(test$y,pred.test.class)
