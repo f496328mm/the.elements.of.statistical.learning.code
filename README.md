@@ -55,10 +55,11 @@ data can be found in the book website www-stat.stanford.edu/ElemStatLearn
 ```	 
  #  Correct percent <br> 
  ```sh
- 	train :
+
+	train :
 	sum( diag( t.train.matrix ) )/sum(t.train.matrix)
 	 [1] 0.5227273	
-	test  : 
+	test : 
 	sum( diag( t.test.matrix ) )/sum(t.test.matrix)
 	 [1] 0.3333333	 
 ```		
