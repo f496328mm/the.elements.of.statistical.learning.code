@@ -5,6 +5,10 @@
 	# vowel data, and compute the misclassification error for the test data. The
 	# data can be found in the book website www-stat.stanford.edu/ElemStatLearn
 
+	# train data 	: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.train
+	# test  data 	: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.test
+	# info		: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.info.txt
+
 	#function
 	
 	# 最後預測  final prediction
