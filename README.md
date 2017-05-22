@@ -22,7 +22,7 @@ data can be found in the book website www-stat.stanford.edu/ElemStatLearn
 	 1  2  3  4  5  6  7  8  9 10 11 
 	 48 48 48 48 48 48 48 48 48 48 48
 ```	
- #  做多模型, 1 vs 非1 <br> 	
+ #  Confusion matrix <br> 	
  
 ```sh
      		pred_train_class
@@ -55,8 +55,10 @@ data can be found in the book website www-stat.stanford.edu/ElemStatLearn
 ```	 
  #  Correct percent <br> 
  ```sh
+ 	train :
 	sum( diag( t.train.matrix ) )/sum(t.train.matrix)
 	 [1] 0.5227273	
+	test  : 
 	sum( diag( t.test.matrix ) )/sum(t.test.matrix)
 	 [1] 0.3333333	 
 ```		
