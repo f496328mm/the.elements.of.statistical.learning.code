@@ -16,3 +16,11 @@ data can be found in the book website www-stat.stanford.edu/ElemStatLearn
 	# info		: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.info.txt
 
 
+#======================================================================================
+
+	table( train$y )
+	## 
+	##  1  2  3  4  5  6  7  8  9 10 11 
+	## 48 48 48 48 48 48 48 48 48 48 48
+
+
