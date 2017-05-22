@@ -16,7 +16,7 @@ data can be found in the book website www-stat.stanford.edu/ElemStatLearn
 	# info		: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.info.txt
 
 
-#======================================================================================
+<big>DEMO
 
 	table( train$y )
 	## 
