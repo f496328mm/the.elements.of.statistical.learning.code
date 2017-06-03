@@ -11,6 +11,7 @@ analysis by fitting a separate Gaussian model per class. Try it out on the
 vowel data, and compute the misclassification error for the test data. The
 data can be found in the book website www-stat.stanford.edu/ElemStatLearn <br>
 使用高斯模型(迴歸)，對 vowel data 進行多元分類，主要利用 1 vs 非1 去做多個迴歸 model<br>
+data 如下， 1 vs 非1 的方法可以參考 code，如有問題麻煩留言給我
 
 	# train data 	: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.train
 	# test  data 	: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.test
@@ -22,11 +23,12 @@ data can be found in the book website www-stat.stanford.edu/ElemStatLearn <br>
 	 table( train$y )
 	 1  2  3  4  5  6  7  8  9 10 11 
 	 48 48 48 48 48 48 48 48 48 48 48
+	 # 11 類，做 11 個 1 vs 非1 的迴歸 model
 ```	
  #  Confusion matrix <br> 	
  
 ```sh
-     		pred_train_class
+     		pred_train_class
   	    1  2  3  4  5  6  7  8  9 10 11
 	1  39  3  0  0  0  0  0  4  0  2  0
 	2  18 21  9  0  0  0  0  0  0  0  0
