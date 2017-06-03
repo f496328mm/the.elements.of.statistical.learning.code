@@ -13,10 +13,10 @@ data can be found in the book website www-stat.stanford.edu/ElemStatLearn <br>
 使用高斯模型(迴歸)，對 vowel data 進行多元分類，主要利用 1 vs 非1 去做多個迴歸 model<br>
 ```sh
 	  if y = 1 : k, k 種類別
-	  example:	model_1 : y = 1, y[y!=1]=0	-> model_1 = lm( y~. )
-	 		model_2 : y = 2, y[y!=2]=0	-> model_2 = lm( y~. )
+	  example:	model_1 : y[y==1]=1 , y[y!=1]=0	-> model_1 = lm( y~. )
+	 		model_2 : y[y==2]=1 , y[y!=2]=0	-> model_2 = lm( y~. )
 	 		   ....................
-	 		model_k : y = k, y[y!=k]=0	-> model_k = lm( y~. )
+	 		model_k : y[y==k]=1 , y[y!=k]=0	-> model_k = lm( y~. )
 ```
 data 如下， 詳細 1 vs 非1 的方法可以參考 code，如有問題麻煩留言給我
 
