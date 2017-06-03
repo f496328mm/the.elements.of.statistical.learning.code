@@ -9,7 +9,8 @@ Exercise 4.9 : <br>
 Write a computer program to perform a quadratic discriminant
 analysis by fitting a separate Gaussian model per class. Try it out on the
 vowel data, and compute the misclassification error for the test data. The
-data can be found in the book website www-stat.stanford.edu/ElemStatLearn
+data can be found in the book website www-stat.stanford.edu/ElemStatLearn <br>
+使用高斯模型(迴歸)，對 vowel data 進行多元分類，主要利用 1 vs 非1 去做多個迴歸 model<br>
 
 	# train data 	: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.train
 	# test  data 	: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.test
