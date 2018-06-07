@@ -1,7 +1,7 @@
 # the elements of statistical learning, Exercise R code
 the.elements.of.statistical.learning-2009
 
-book: http://statweb.stanford.edu/~tibs/ElemStatLearn/
+book: http://web.stanford.edu/~hastie/ElemStatLearn/
 
 finish:<br>
 Exercise 4.9 : <br>
